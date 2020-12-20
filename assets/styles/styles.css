@@ -1,0 +1,142 @@
+:root {
+   --primary-color: #7793a8;
+   --secondary-color: #024e76;
+   --tertiary-color: #102a44;
+}
+
+/* Remove some default browser-enfored styles, the * selector is the universal selector */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   color: var(--tertiary-color);
+   font-family: Monaco, Helvetica, Arial, sans-serif;
+}
+
+/****************************************************/
+/* START of SHARED styles */
+.secondary-border {
+   border-color: var(--tertiary-color);
+}
+/* END of SHARED styles */
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/
+
+/****************************************************/
+/* START of HEADER styles */
+header {
+   background-image: url("../images/hero-bg.jpg");
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   padding: 1px 100px 6px 0;
+   background-color: var(--tertiary-color);
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   z-index: 9999;
+   font-size: 36px;
+}
+
+header h1 {
+   font-weight: bold;
+   font-size: 36px;
+   color: var(--tertiary-color);
+   background-color: var(--primary-color);
+   padding: 5px 5px 5px 60px;
+}
+
+header a {
+   text-decoration: none;
+   color: var(--tertiary-color);
+}
+
+.nav-title {
+   color: var(--primary-color);
+   border-bottom: 3px solid;
+   text-align: center;
+   width: 50%;
+}
+
+.nav-border {
+   border-color: var(--primary-color);
+}
+
+
+header nav {
+   margin: 7px 0;
+}
+
+header nav ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+}
+
+header nav ul li a {
+   padding: 1px 15px;
+   font-weight: lighter;
+   font-size: 1.55vw;
+   color: var(--primary-color);
+   justify-content: space-between;
+}
+
+.empty-space {
+   padding: 1px 4px;
+}
+/* END of HEADER styles */
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/
+
+/****************************************************/
+/* START of HERO styles */
+.hero {
+   background-image: url("../images/hero_bg.jpg");
+   width: 100%;
+   height: 600px;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   text-align: right;   
+}
+
+.hero div {
+   text-anchor: end;
+}
+
+.grid-wrapper {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   padding: 25px 70px;
+}
+
+.grid-container {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 2fr;
+   grid-template-rows: 2fr;
+}
+
+.grid-item {
+   padding: 10px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+   color: var(--tertiary-color);
+   background-color: var(--primary-color);
+   grid-column: 2 / span 1;
+   grid-row: 2 / span 1;
+}
+/* END of HERO styles */
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/
