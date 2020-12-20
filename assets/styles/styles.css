@@ -185,15 +185,61 @@ header nav ul li a {
    align-self: start;
 }
 
-.work div nav {
+.work-grid-wrapper {
    width: 100%;
+   display: flex;
    align-items: left;
    padding: 10px;
-   border-left: 3px solid var(--secondary-color);
+   border-left: 3px solid var(--tertiary-color);
    align-self: start;
    height: 100%;
 }
 
+.work-grid-container {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr;
+   color: var(--secondary-color);
+   font-size: 1.2rem;
+   column-gap: 10px;
+}
+
+.work-grid-item {
+   padding: 15px 0;
+   border: 2px solid var(--primary-color);
+   display: flex;
+   height: 300px;
+}
+.work-run-buddy-container {
+   background-image: url("../images/work_run_buddy.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat (3, 1fr);
+   grid-template-rows: repeat (3, 1fr);
+   flex-direction: row;
+}
+
+.work-run-buddy-container:hover {
+   opacity: 0.5;
+}
+
+.work-run-buddy-item {
+   background-color: var(--primary-color);
+   grid-column: 1 / span 1;
+   grid-row: 3 / span 1;
+   height: fit-content;
+   width: fit-content;
+}
+
+.work-run-buddy-item h4 {
+   font-size: 18px;
+   padding: 5px;
+}
+.work-run-buddy-item h5 {
+   font-size: 12px;
+   padding: 0 5px 5px 5px;
+}
 /* END of WORK styles */
 /**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/
 
