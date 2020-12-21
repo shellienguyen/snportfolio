@@ -7,7 +7,7 @@ Files:
 
 About:
 ------
-This site showcases Shellie Nguyen's portfolio that provides a short description of her bio, her sample work, her resume, and ways to contact her.
+This site showcases Shellie Nguyen's portfolio which provides a short description of her bio, her sample work, her resume, and ways to contact her.
 
 Project Goal:
 -------------
