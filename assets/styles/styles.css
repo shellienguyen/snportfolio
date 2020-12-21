@@ -149,6 +149,11 @@ header nav ul li a {
    height: 150%;
 }
 
+.float-left {
+   float: left;
+   padding: 0 10px 0 0;
+}
+
 .about-me h3 {
    color: var(--secondary-color);
    font-size: 34px;
@@ -214,13 +219,14 @@ header nav ul li a {
 .work-grid-item {
    padding: 15px 0;
    border: 2px solid var(--primary-color);
-   height: 150px;
+   min-height: 150px;
 }
 .work-run-buddy-container {
    grid-column: 1 / span 2;
    grid-row: 1 / span 2;
    background-image: url("../images/work_run_buddy.jpg");
    background-size: cover;
+   background-position: center bottom;
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(3, 1fr);
@@ -238,15 +244,35 @@ header nav ul li a {
    align-self: flex-end;
 }
 
-.work-run-buddy-container:hover {
+.work-placeholder {
+   background-image: url("../images/work_place_holder.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   text-decoration: none;
+}
+
+.work-placeholder-item {
+   background-color: var(--primary-color);
+   grid-column: 1 / span 1;
+   grid-row: 3 / span 1;
+   height: fit-content;
+   width: fit-content;
+   text-decoration: none;
+   color: var(--tertiary-color);
+   align-self: flex-end;
+}
+
+.work-run-buddy-container:hover, .work-placeholder:hover {
    opacity: 0.5;
 }
 
-.work-run-buddy-item h4 {
+.work-h4 {
    font-size: 18px;
    padding: 5px;
 }
-.work-run-buddy-item h5 {
+.work-h5 {
    font-size: 12px;
    padding: 0 5px 5px 5px;
 }
@@ -269,14 +295,6 @@ header nav ul li a {
    width: 150px;
    text-align: right;
    padding: 10px;
-}
-
-.contact-me-nav-center {
-   width: 100%;
-   justify-content: space-around;
-   text-align: center;
-   align-self: center;
-   align-items: center;
 }
 
 .contact-me div nav {
