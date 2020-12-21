@@ -221,6 +221,7 @@ header nav ul li a {
    border: 2px solid var(--primary-color);
    min-height: 150px;
 }
+
 .work-run-buddy-container {
    grid-column: 1 / span 2;
    grid-row: 1 / span 2;
@@ -318,7 +319,7 @@ header nav ul li a {
 
 .contact-me nav ul li a {
    font-weight: lighter;
-   font-size: 1vw;
+   font-size: 1.25vw;
 }
 
 .contact-empty-space {
@@ -331,132 +332,103 @@ header nav ul li a {
 /****************************************************/
 /* START of MEDIA QUERIES styles */
 
-/* Media Query for small desktop and screens and smaller */
-@media screen and (max-width: 980px) {
-   header {
-      padding-bottom: 10px;
-      justify-content: center;
-      position: relative;
-   }
-
-   header h1 {
-      width: 100%;
-      text-align: center;
-   }
-
-   header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-   }
-
-   header nav ul li a {
-      font-size: 20px;
-   }
-
-   .contact-me {
-      text-align: center;
-   }
-
-   .contact-me nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-      padding-top: 5px;
-      }
-
-   .contact-me nav ul li a {
-      font-size: 20px;
-   }
-
 /* Media Query for tablets and smaller */
 @media screen and (max-width: 768px) {
-   header {
-      padding-bottom: 10px;
-      justify-content: center;
-      position: relative;
-   }
-
    header h1 {
-      width: 100%;
-      text-align: center;
-   }
-
-   header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
+      font-weight: bold;
+      font-size: 28px;
+      padding: 5px 5px 5px 60px;
    }
 
    header nav ul li a {
-      font-size: 20px;
+      font-size: 5vw;
+      padding: 0;
+      margin: 2px;
    }
 
-   .work-grid-wrapper {
-      width: 100%;
+   .nav-title {
       display: flex;
-      align-items: left;
-      padding: 10px;
-      border-left: 3px solid var(--secondary-color);
-      align-self: start;
-      height: 100%;
+      width: 100%;
+   }
+
+   .header-nav-center {
+      padding: 5px;
+   }
+      
+   .empty-space {
+      padding: 0;
    }
    
+   .about-me {
+      margin: 10px auto;
+   }
+   
+   .float-left {
+      float: left;
+      padding: 0 10px 0 0;
+   }
+   
+   .about-me h3 {
+      font-size: 22px;
+      width: 100px;
+   }
+
+   .work {
+      margin: 10px auto;
+   }
+
+   .work h3 {
+      font-size: 22px;
+      width: 100px;
+   }
+
    .work-grid-container {
-      width: 100%;
-      display: grid;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(3, 1fr);
-      color: var(--secondary-color);
-      font-size: 1.2rem;
-      column-gap: 10px;
-   }
-   
-   .work-grid-item {
-      padding: 15px 0;
-      border: 2px solid var(--primary-color);
-      display: flex;
    }
 
    .work-run-buddy-container {
-      background-image: url("../images/work_run_buddy.jpg");
-      background-size: cover;
-      display: grid;
-      grid-template-rows: repeat (3, 1fr);
-      flex-direction: column;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
    }
-   
+
+   .work-grid-item {
+      min-height: 100px;
+   }   
+
    .work-run-buddy-item {
-      background-color: var(--primary-color);
+      grid-column: 1 / span 2;
       grid-row: 3 / span 1;
-      height: fit-content;
-      width: fit-content;
-   }
-   
-   .work-run-buddy-item h4 {
-      font-size: 18px;
-      padding: 5px;
    }
 
-   .work-run-buddy-item h5 {
-      font-size: 12px;
-      padding: 0 5px 5px 5px;
+   .work-placeholder-item {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
    }
-   
+
    .contact-me {
-      text-align: center;
+      margin: 10px auto;
    }
-
-   .contact-me nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-      padding-top: 5px;
-      }
-
+      
+   .contact-me h3 {
+      font-size: 22px;
+      width: 100px;
+   }
+   
+   .contact-me-title {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+   }
+   
    .contact-me nav ul li a {
-      font-size: 20px;
+      font-size: 5vw;
    }
-
+   
+   .contact-empty-space {
+      padding: 0;
+   }
+   
 }
 /* END of MEDIA QUERIES styles */
 /**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~**/
