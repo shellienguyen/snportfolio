@@ -29,7 +29,7 @@ body {
 /****************************************************/
 /* START of HEADER styles */
 header {
-   background-image: url("../images/hero-bg.jpg");
+   background-image: url("../images/hero_bg.jpg");
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -257,16 +257,38 @@ header nav ul li a {
 .work-surf-conditions {
    background-image: url("../images/surf-forecast2.jpg");
    background-size: cover;
-   background-color: var(--primary-color);
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(3, 1fr);
    text-decoration: none;
-   height: fit-content;
-   width: fit-content;
-   color: var(--tertiary-color);
-   align-self: flex-end;}
+}
 
+.work-weather-dashboard {
+   background-image: url("../images/weather-dashboard.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   text-decoration: none;
+}
+
+.work-day-scheduler {
+   background-image: url("../images/work-day-scheduler.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   text-decoration: none;
+}
+
+.work-pwd-gen {
+   background-image: url("../images/pwd-gen.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   text-decoration: none;
+}
 .work-placeholder-item {
    background-color: var(--primary-color);
    grid-column: 1 / span 1;
@@ -278,7 +300,12 @@ header nav ul li a {
    align-self: flex-end;
 }
 
-.work-run-buddy-container:hover, .work-placeholder:hover {
+.work-run-buddy-container:hover,
+.work-placeholder:hover,
+.work-surf-conditions:hover,
+.work-weather-dashboard:hover,
+.work-pwd-gen:hover,
+.work-day-scheduler:hover  {
    opacity: 0.5;
 }
 
