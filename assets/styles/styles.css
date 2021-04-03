@@ -222,10 +222,10 @@ header nav ul li a {
    min-height: 150px;
 }
 
-.work-run-buddy-container {
+.happy-tails-container {
    grid-column: 1 / span 2;
    grid-row: 1 / span 2;
-   background-image: url("../images/work_run_buddy.jpg");
+   background-image: url("../images/happy-tails.jpg");
    background-size: cover;
    background-position: center bottom;
    display: grid;
@@ -289,6 +289,16 @@ header nav ul li a {
    grid-template-rows: repeat(3, 1fr);
    text-decoration: none;
 }
+
+.work-run-buddy {
+   background-image: url("../images/work_run_buddy.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   text-decoration: none;
+}
+
 .work-placeholder-item {
    background-color: var(--primary-color);
    grid-column: 1 / span 1;
@@ -300,11 +310,12 @@ header nav ul li a {
    align-self: flex-end;
 }
 
-.work-run-buddy-container:hover,
+.happy-tails-container:hover,
 .work-placeholder:hover,
 .work-surf-conditions:hover,
 .work-weather-dashboard:hover,
 .work-pwd-gen:hover,
+.work-run-buddy:hover,
 .work-day-scheduler:hover  {
    opacity: 0.5;
 }
@@ -427,7 +438,7 @@ header nav ul li a {
       grid-template-rows: repeat(3, 1fr);
    }
 
-   .work-run-buddy-container {
+   .happy-tails-container {
       grid-column: 1 / span 2;
       grid-row: 1 / span 1;
    }
